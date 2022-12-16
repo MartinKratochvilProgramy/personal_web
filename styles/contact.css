@@ -10,7 +10,6 @@
     font-family: var(--inter);
     color: var(--lightgray);
     font-size: 44px;
-    margin-top: 10px;
     font-weight: 500;
 }
 
@@ -36,6 +35,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 80px;
 }
 
 .contact-text {
@@ -65,7 +65,7 @@
 }
 
 .contact-copied-display {
-    animation: 2s linear 0s 1 fadeOut;  
+    animation: 2s linear 0s 1 fadeOut;
 }
 
 .contact-social-links {
@@ -84,25 +84,27 @@
 
 .contact-social-link:hover {
     transform: translateY(-1px);
-    filter: brightness(0) saturate(100%) invert(81%) sepia(52%) saturate(425%) hue-rotate(100deg) brightness(103%) contrast(103%); 
+    filter: brightness(0) saturate(100%) invert(81%) sepia(52%) saturate(425%) hue-rotate(100deg) brightness(103%) contrast(103%);
 }
 
 
 @keyframes slideInFromTopContact {
-0% {
-    transform: translateY(-10%);
-    opacity: 0;
-}
-100% {
-    transform: translateY(0);
-    opacity: 1;
-}
+    0% {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @keyframes fadeOut {
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }

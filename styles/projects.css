@@ -1,8 +1,8 @@
 .projects-header_container {
-    padding-top: 0;
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+    margin-top: 80px;
 }
 
 .projects-header {
@@ -98,7 +98,7 @@
     transition-duration: 0.4s;
 }
 
-.projects-project-details{
+.projects-project-details {
     width: 110%;
     font-size: 14px;
     line-height: 26px;
@@ -145,14 +145,15 @@
 
 .projects-github-link:hover {
     transform: translateY(-1px);
-    filter: brightness(0) saturate(100%) invert(81%) sepia(52%) saturate(425%) hue-rotate(100deg) brightness(103%) contrast(103%); 
+    filter: brightness(0) saturate(100%) invert(81%) sepia(52%) saturate(425%) hue-rotate(100deg) brightness(103%) contrast(103%);
 }
 
 @keyframes slideInFromTopProjects {
     0% {
-        transform: translateY(-10%);
+        transform: translateY(-5%);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -163,56 +164,70 @@
     .projects-container {
         margin-bottom: 0px;
     }
-    .projects-img-container{
+
+    .projects-img-container {
         display: none;
     }
+
     .projects-description-container-right {
         width: 100%;
         position: inherit;
         align-items: start;
     }
+
     .projects-description-container-left {
         width: 100%;
         position: inherit;
         align-items: start;
     }
+
     .projects-project-details {
         width: auto;
     }
+
     .projects-project-tech-stack-item-right {
         font-size: 12px;
         margin-left: 0;
         margin-right: 10px;
     }
+
     .projects-project-tech-stack-item-left {
         font-size: 12px;
         margin-right: 10px;
     }
+
     .projects-details-right {
         text-align: start;
     }
+
     .projects-description-container-right {
         justify-content: center;
         align-items: center;
     }
+
     .projects-details-left {
         text-align: center;
     }
+
     .projects-details-right {
         text-align: center;
     }
+
     .projects-description-container-left {
         justify-content: center;
         align-items: center;
     }
+
     .projects-shown {
         margin-bottom: 40px;
     }
-    .projects-header {
-        font-size: 20px;
-    }
+
     .projects-header_container {
         align-items: center;
         justify-content: center;
     }
-}   
+
+    .projects-link {
+        font-size: 12px;
+    }
+}
