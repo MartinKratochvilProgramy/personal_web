@@ -18,7 +18,7 @@
 }
 
 .header-animate-from-top:nth-child(1) {
-    animation: 0.4s linear 0s 1 slideInFromTop;
+    animation: 0.3s linear 0s 1 slideInFromTop;
 }
 
 .header-animate-from-top:nth-child(2) {
@@ -26,10 +26,6 @@
 }
 
 .header-animate-from-top:nth-child(3) {
-    animation: 0.8s linear 0s 1 slideInFromTop;
-}
-
-.header-animate-from-top:nth-child(4) {
     animation: 1s linear 0s 1 slideInFromTop;
 }
 
@@ -71,12 +67,12 @@
 
 @keyframes slideInFromTop {
     0% {
-        transform: translateY(-200%);
+        transform: translateY(-10%);
         opacity: 0;
     }
 
     100% {
-        transform: translateY(0);
+        transform: translateY(0%);
         opacity: 1;
     }
 }
