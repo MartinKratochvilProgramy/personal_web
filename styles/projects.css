@@ -160,7 +160,7 @@
     }
 }
 
-@media (max-width: 840px) {
+@media (max-width: 960px) {
     .projects-container {
         margin-bottom: 0px;
     }

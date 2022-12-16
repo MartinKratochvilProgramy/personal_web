@@ -28,7 +28,7 @@ const viewHeight = window.innerHeight;
 
 var myScrollFunc = function () {
   var y = window.scrollY + viewHeight;
-  if (y >= nameElHeight * 1.2) {
+  if (y >= nameElHeight * 1.3) {
     aboutEl.className = "about-shown";
   }
   console.log(y, aboutElHeight);
