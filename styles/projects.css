@@ -227,6 +227,14 @@
         justify-content: center;
     }
 
+    .projects-header {
+        font-size: 20px;
+    }
+
+    .projects-header_number {
+        font-size: 18px;
+    }
+
     .projects-link {
         font-size: 12px;
     }

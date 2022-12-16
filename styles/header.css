@@ -71,18 +71,24 @@
 
 @keyframes slideInFromTop {
     0% {
-      transform: translateY(-200%);
-      opacity: 0;
+        transform: translateY(-200%);
+        opacity: 0;
     }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
 
-@media (max-width: 640px) {
-    .header-item  {
-        margin: 0 10px 0 10px;
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
-  
+
+@media (max-width: 640px) {
+    .header-item {
+        margin: 0 10px 0 10px;
+    }
+
+    .header-container {
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

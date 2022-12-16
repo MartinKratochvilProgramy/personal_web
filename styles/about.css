@@ -1,5 +1,5 @@
 .about-header_container {
-    margin-top: 80px;
+    margin-top: 120px;
     padding-top: 30px;
     display: flex;
     align-items: center;
@@ -141,6 +141,14 @@ ul li::before {
         padding-top: 0;
         align-items: center;
         justify-content: center;
+    }
+
+    .about-header {
+        font-size: 20px;
+    }
+
+    .about-header_number {
+        font-size: 18px;
     }
 
     .about-list-container {
