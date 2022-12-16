@@ -1,0 +1,58 @@
+:root {
+    --green: #64ffda;
+    --lightgray: #ccd6f6;
+    --gray: #8892b0;
+    --dark-navy: #112240;
+    --fira: 'Fira Code', monospace;
+    --inter: 'Inter', sans-serif;;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+    background: #0a192f;
+    padding: 0;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+}
+
+hr {
+    height:1px;
+    border-width:0px;
+    width:40%;
+    margin-left:5%;
+    background-color: #233554;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+ul {
+    text-align: left;
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        max-width:1024px
+    }
+}
+
+@media (max-width: 840px) { 
+    hr {
+        display: none;
+    }
+}

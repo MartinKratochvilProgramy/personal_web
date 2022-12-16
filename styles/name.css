@@ -1,0 +1,74 @@
+.name-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    
+    animation: 1s ease-out 0s 1 slideInFromTopName;
+}
+
+.name-hi {
+    color: var(--green);
+    font-family: var(--fira);
+    opacity: 0.5;
+}
+
+.name-my-name {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-family: var(--inter);
+    color: var(--lightgray);
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.name-my-proffesion {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-family: var(--inter);
+    color: var(--gray);
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.name-description {
+    max-width: 55%;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-family: var(--inter);
+    color: var(--gray);
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+@keyframes slideInFromTopName {
+    0% {
+      transform: translateY(-10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@media (max-width: 640px) {
+    .name-container {
+        justify-content: start;
+        margin-top: 94px;
+        margin-bottom: 40px;
+        height: 80vh;
+    }
+    .name-my-name  {
+        font-size: 46px;
+    }
+    .name-my-proffesion  {
+        font-size: 46px;
+    }
+    .name-description {
+        max-width: 100%;
+    }
+}

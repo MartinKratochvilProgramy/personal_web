@@ -1,0 +1,218 @@
+.projects-header_container {
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.projects-header {
+    font-family: var(--inter);
+    color: var(--lightgray);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.projects-header_number {
+    color: var(--green);
+    font-family: var(--fira);
+    font-size: 20px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 240px;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.projects-hidden {
+    opacity: 0;
+}
+
+.projects-shown {
+    animation: 1s ease-out 0s 1 slideInFromTopProjects;
+    position: relative;
+}
+
+.projects-img-container {
+    width: 60%;
+}
+
+.projects-img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.projects-img:hover {
+    filter: none;
+}
+
+.projects-description-container-right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    right: 0;
+    position: absolute;
+    margin-bottom: 60px;
+}
+
+.projects-description-container-left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    left: 0;
+    position: absolute;
+    z-index: 10;
+    margin-bottom: 60px;
+}
+
+.projects-featured-project {
+    color: var(--green);
+    font-family: var(--fira);
+}
+
+.projects-project-name {
+    color: var(--lightgray);
+    font-family: var(--inter);
+    margin: 10px 0;
+}
+
+.projects-link {
+    color: var(--lightgray);
+}
+
+.projects-link:hover {
+    color: var(--green);
+    transition-duration: 0.4s;
+}
+
+.projects-project-details{
+    width: 110%;
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--lightgray);
+    font-family: var(--inter);
+    background-color: var(--dark-navy);
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+    text-decoration: none;
+
+}
+
+.projects-details-right {
+    text-align: end;
+}
+
+.projects-details-left {
+    text-align: start;
+}
+
+.projects-project-tech-stack {
+    margin-top: 18px;
+    font-size: 14px;
+    color: var(--lightgray);
+    font-family: var(--fira);
+    display: flex;
+}
+
+.projects-project-tech-stack-item-right {
+    margin-left: 28px;
+}
+
+.projects-project-tech-stack-item-left {
+    margin-right: 28px;
+}
+
+.projects-github-link {
+    width: 20px;
+    margin-top: 12px;
+    color: var(--green);
+    cursor: pointer;
+}
+
+.projects-github-link:hover {
+    transform: translateY(-1px);
+    filter: brightness(0) saturate(100%) invert(81%) sepia(52%) saturate(425%) hue-rotate(100deg) brightness(103%) contrast(103%); 
+}
+
+@keyframes slideInFromTopProjects {
+    0% {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 840px) {
+    .projects-container {
+        margin-bottom: 0px;
+    }
+    .projects-img-container{
+        display: none;
+    }
+    .projects-description-container-right {
+        width: 100%;
+        position: inherit;
+        align-items: start;
+    }
+    .projects-description-container-left {
+        width: 100%;
+        position: inherit;
+        align-items: start;
+    }
+    .projects-project-details {
+        width: auto;
+    }
+    .projects-project-tech-stack-item-right {
+        font-size: 12px;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .projects-project-tech-stack-item-left {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    .projects-details-right {
+        text-align: start;
+    }
+    .projects-description-container-right {
+        justify-content: center;
+        align-items: center;
+    }
+    .projects-details-left {
+        text-align: center;
+    }
+    .projects-details-right {
+        text-align: center;
+    }
+    .projects-description-container-left {
+        justify-content: center;
+        align-items: center;
+    }
+    .projects-shown {
+        margin-bottom: 40px;
+    }
+    .projects-header {
+        font-size: 20px;
+    }
+    .projects-header_container {
+        align-items: center;
+        justify-content: center;
+    }
+}   
