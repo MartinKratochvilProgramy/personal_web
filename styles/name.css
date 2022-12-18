@@ -63,7 +63,7 @@
     color: var(--green);
     text-decoration: none;
     padding: 12px 24px;
-    margin-top: 26px;
+    margin-top: 30px;
     border: solid 1px var(--green);
     border-radius: 3px;
     font-family: var(--fira);
@@ -108,7 +108,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-top: 220px;
+        margin-top: 180px;
         margin-bottom: 150px;
         height: 60vh;
     }
