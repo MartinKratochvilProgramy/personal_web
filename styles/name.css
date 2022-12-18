@@ -59,6 +59,26 @@
     animation-fill-mode: backwards;
 }
 
+.name-contact-button {
+    color: var(--green);
+    text-decoration: none;
+    padding: 12px 24px;
+    margin-top: 26px;
+    border: solid 1px var(--green);
+    border-radius: 3px;
+    font-family: var(--fira);
+    font-size: 16px;
+    transition-duration: 0.5s;
+    animation-duration: 0.5s;
+    animation-name: slideInFromTop;
+    animation-delay: 2.5s;
+    animation-fill-mode: backwards;
+}
+
+.name-contact-button:hover {
+    background-color: rgba(100, 255, 218, 0.18);
+}
+
 @keyframes slideInFromTopOpacityHalf {
     0% {
         transform: translateY(-10%);
