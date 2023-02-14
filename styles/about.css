@@ -45,6 +45,7 @@
 .about-hidden {
     opacity: 0;
     height: 60vh;
+    margin-bottom: 210px;
 }
 
 .about-shown {
